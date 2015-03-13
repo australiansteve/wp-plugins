@@ -1,4 +1,0 @@
-Wordpress plugin: austeve-charity-worker
-
-TODO list:
-* Consolidate various plugins from 2015 icebreaker site into a single all encompassing plugin
