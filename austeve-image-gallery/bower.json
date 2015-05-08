@@ -1,0 +1,23 @@
+{
+  "name": "austeve-image-gallery",
+  "version": "0.0.1",
+  "authors": [
+    "Steve Weaver Crawford <steve@australiansteve.com>"
+  ],
+  "description": "WordPress plugin to display images in a slick gallery",
+  "keywords": [
+    "wordpress",
+    "slick",
+    "gallery"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "jquery": "~1.11.1",
+    "slick.js": "~1.5.4"
+  }
+}
