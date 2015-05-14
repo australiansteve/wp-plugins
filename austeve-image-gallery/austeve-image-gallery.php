@@ -10,9 +10,10 @@
  */
 
 function austeve_image_gallery_styles() {
-    wp_enqueue_style( 'slick_styles', plugin_dir_url( __FILE__ ) . 'bower_components/slick.js/slick/slick.css', '' );
+    wp_enqueue_style( 'slick_styles', plugin_dir_url( __FILE__ ) . 'bower_components/slick.js/slick/slick.css', array() );
+    wp_enqueue_style( 'slick_theme_styles', plugin_dir_url( __FILE__ ) . 'bower_components/slick.js/slick/slick-theme.css', array() );
 }
-add_action( 'wp_enqueue_scripts', 'austeve_image_gallery_styles' );
+add_action( 'wp_enqueue_scripts', 'austeve_image_gallery_styles', 11 );
 
 function austeve_image_gallery_scripts() {
     if ( WP_DEBUG ) :
