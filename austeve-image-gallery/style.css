@@ -1,0 +1,29 @@
+.widget_austeve_gallery_widget .container {
+	position: relative;
+}
+
+.widget_austeve_gallery_widget .layover {
+	display: none;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+	height: 100%;
+	background: black; 
+	opacity: 0.5; 
+	z-index: 2; 
+	color: white;
+	padding-top: 2rem;
+}
+
+.widget_austeve_gallery_widget .layover .title {
+	color: white;
+  	margin-top: 20%;
+}
+
+.widget_austeve_gallery_widget .layover .button {
+  	margin-top: 3rem;
+}
+
+.widget_austeve_gallery_widget .img {
+	display: block;
+}
