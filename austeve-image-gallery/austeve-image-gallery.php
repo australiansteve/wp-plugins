@@ -75,10 +75,14 @@ function get_attachment_ids_by_slug( $slug, $taxonomy = 'media_category', $shuff
 
 	//Get the term ID for the given slug
 	$term = get_term_by('slug', $slug, 'media_category');
+    $attachments = null;
+    
+    if ( $term )
+    {
+    	//Get all attachments with term_id
+    	$attachments = get_objects_in_term( $term->term_id, $taxonomy );
+    }
 
-	//Get all attachments with term_id
-	$attachments = get_objects_in_term( $term->term_id, $taxonomy );
-	
 	//Get the URL for each attachment
 	$ids = array();
 	if ( $attachments ) {
