@@ -1,5 +1,7 @@
 .widget_austeve_gallery_widget .container {
 	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 .widget_austeve_gallery_widget .layover {
@@ -17,7 +19,6 @@
 
 .widget_austeve_gallery_widget .layover .title {
 	color: white;
-  	margin-top: 20%;
 }
 
 .widget_austeve_gallery_widget .layover .button {
@@ -26,4 +27,8 @@
 
 .widget_austeve_gallery_widget .img {
 	display: block;
+}
+
+ul.austeve_gallery_preview { /* Possibly only needed on large/medium screen */
+	padding-top: 8rem;
 }
