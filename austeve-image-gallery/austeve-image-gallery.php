@@ -3,7 +3,7 @@
  * Plugin Name: austeve Image Gallery
  * Plugin URI: https://github.com/australiansteve/wp-plugins/austeve-image-gallery
  * Description: Display a set on images in a page or post
- * Version: 1.0
+ * Version: 1.0.1
  * Author: AustralianSteve
  * Author URI: http://AustralianSteve.com
  * License: GPL2
@@ -76,7 +76,7 @@ function get_attachment_ids_by_slug( $slug, $taxonomy = 'media_category', $shuff
 	//Get the term ID for the given slug
 	$term = get_term_by('slug', $slug, 'media_category');
     $attachments = null;
-    
+
     if ( $term )
     {
     	//Get all attachments with term_id
@@ -134,7 +134,7 @@ class austeve_gallery_widget extends WP_Widget {
             $widgetOutput .= "<div class='description'>".$instance['description']."</div>";
         }
         if (isset($instance['action_url'])) {
-            $widgetOutput .= "<a href='".$instance['action_url']."' class='button'>".$instance['action_verb']."</a>";
+            $widgetOutput .= "<a href='".$instance['action_url']."' class='button' title='".$instance['title']."'>".$instance['action_verb']."</a>";
         }
         $widgetOutput .= "</div>"; //div.layover
         $widgetOutput .= "<div class='img'><img src='".$instance['preview_image']."'/></div>";

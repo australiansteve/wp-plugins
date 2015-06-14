@@ -8,7 +8,14 @@ Tags: images, gallery
 To use this plugin, first install dependencies with:
 <pre>bower install</pre>
 
-<h3>NOtes</h3>
+<h3>Notes</h3>
 <ul>
 <li>Only one carousel can be used per page</li>
+</ul>
+
+<h3>Change history</h3>
+
+<h4>1.0.1</h4>
+<ul>
+<li>Include title attribute on widget link  so that page title can be set nicely</li>
 </ul>
