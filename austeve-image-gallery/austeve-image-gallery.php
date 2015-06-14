@@ -209,6 +209,15 @@ class austeve_gallery_widget extends WP_Widget {
 // Register and load the widget
 function austeve_gallery_load_widget() {
     register_widget( 'austeve_gallery_widget' );
+
+    register_sidebar( array(
+        'name'          => 'Gallery preview sidebar',
+        'id'            => 'austeve_gallery_1',
+        'before_widget' => '<li class="widget_austeve_gallery_widget">',
+        'after_widget'  => '</li>',
+        'before_title'  => '',
+        'after_title'   => '',
+    ) );
 }
 add_action( 'widgets_init', 'austeve_gallery_load_widget' );
 ?>
